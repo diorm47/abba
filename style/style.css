@@ -577,7 +577,7 @@ nav {
     position: relative;
     z-index: 11;
 
-    background: rgba(240, 240, 240, 0.703);
+    background: rgba(240, 240, 240, 0.877);
     padding: 10px;
     border-radius: 15px;
     display: flex;
@@ -591,9 +591,7 @@ nav {
   .main_card_item_desc p {
     color: rgb(23, 23, 23);
   }
-  /* .main_card_item_sb p {
-    color: #000;
-  } */
+
 }
 
 @media only screen and (max-width: 600px) {
