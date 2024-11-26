@@ -47,6 +47,9 @@ a {
   letter-spacing: 0%;
   text-align: left;
 }
+.nav_menu p:hover, .nav_rigt p:hover {
+  text-decoration: underline;
+}
 
 .nav_menu {
   display: flex;
@@ -148,6 +151,15 @@ nav {
   padding: 24px 70px;
   margin-top: 80px;
   background: transparent;
+  transition: all 0.4s ease;
+}
+.bg_block_btn {
+  transition: all 0.4s ease;
+}
+.main_block_desc_btm:hover,
+.bg_block_btn:hover {
+  transition: all 0.4s ease;
+  background: rgba(48, 84, 173, 0.5);
 }
 
 .main_block_desc_btm p {
@@ -591,7 +603,6 @@ nav {
   .main_card_item_desc p {
     color: rgb(23, 23, 23);
   }
-
 }
 
 @media only screen and (max-width: 600px) {
