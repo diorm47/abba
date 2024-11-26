@@ -117,6 +117,7 @@ nav {
 .main_block_desc_items {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -146,6 +147,7 @@ nav {
 .main_block_desc_btm {
   padding: 24px 70px;
   margin-top: 80px;
+  background: transparent;
 }
 
 .main_block_desc_btm p {
@@ -319,6 +321,9 @@ nav {
   gap: 22px;
   margin-top: 67px;
 }
+.strategy_card {
+  width: 100%;
+}
 .strategy_card_top {
   border-radius: 13px;
   height: 381px;
@@ -422,4 +427,259 @@ nav {
 
 .cards_carousel_container {
   overflow: hidden;
+}
+
+.block_titles h2 {
+  background: linear-gradient(180deg, rgb(16, 20, 44), rgb(4, 36, 191));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: Felidae;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.car_arrows {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.car_arrow {
+  cursor: pointer;
+}
+
+.car_arrow img {
+  width: 30px;
+}
+.carousel_pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+}
+.header_top {
+  padding-top: 0 !important;
+}
+.mob_menu_btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.mob_menu_btn img {
+  width: 40px;
+  cursor: pointer;
+}
+.mob_menu_exit img {
+  width: 27px;
+}
+
+.mob_menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 111;
+  background: #09052e;
+  padding: 30px;
+  transition: all 0.5s ease;
+  transform: translateX(100%);
+}
+.visible_mob_menu {
+  transition: all 0.5s ease;
+  transform: translateX(0);
+}
+.mob_menu .nav_menu {
+  flex-direction: column;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.mob_menu_exit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer {
+  background: url(../assets/images/img-1.png);
+  background-size: cover;
+}
+.header_top {
+  background: url(../assets/images/img-3.png);
+  background-size: cover;
+}
+@media only screen and (max-width: 1100px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .mob_menu_btn {
+    display: flex;
+  }
+  .nav_wrapper .nav_menu,
+  .nav_wrapper .nav_rigt {
+    display: none;
+  }
+
+  .main_card_item_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .video {
+    height: 400px;
+  }
+
+  .bg_block,
+  .blocks_list,
+  section {
+    padding-top: 50px;
+  }
+  section {
+    padding-bottom: 50px;
+  }
+  .strategy_cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .strategy_card_top {
+    height: auto;
+    gap: 30px;
+  }
+  .main_card_item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 30px 20px;
+  }
+  .main_card_item_img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main_card_item_desc {
+    position: relative;
+    z-index: 11;
+  }
+
+  .main_card_item_desc p {
+    color: #fff;
+  }
+  .main_card_item_sb p {
+    color: #000;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    margin-bottom: 60px;
+  }
+
+  .section_container h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .main_block_desc p {
+    font-size: 28px;
+    text-align: center;
+  }
+  .main_block_desc_sec {
+    width: 100%;
+  }
+  .main_block_desc {
+    width: 100%;
+  }
+  .header .section_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_block_desc_btm {
+    margin-top: 40px;
+    padding: 20px 30px;
+  }
+  .main_block_desc_btm p {
+    font-size: 22px;
+  }
+  .bg_block {
+    padding-top: 50px !important;
+  }
+  .bg_block_desc p {
+    font-size: 16px;
+  }
+  .bg_block_desc div span {
+    font-size: 40px;
+  }
+  .bg_block_btn p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .bg_block_btn {
+    padding: 20px 30px;
+    width: 100%;
+    background: rgba(13, 13, 71, 0.441);
+  }
+  .block_titles h2 {
+    font-size: 40px;
+  }
+  .video {
+    height: 300px;
+  }
+  .video_play {
+    width: 50px;
+    height: 50px;
+    padding-left: 7px;
+  }
+  .cards_carousel {
+    margin-top: 40px;
+  }
+  .main_card_item_desc {
+    width: 100%;
+  }
+  .cards_carousel_item .main_card_item_desc img {
+    width: 80%;
+  }
+  .cards_carousel_item .main_card_item {
+    height: 360px;
+  }
+  .why_bali_desc p {
+    font-size: 20px;
+  }
+  .why_bali_option p {
+    font-size: 20px;
+  }
+  .block_title h2 {
+    font-size: 40px;
+  }
+  .strategy_cards {
+    margin-top: 0;
+  }
+  .strategy_card_top {
+    padding: 20px;
+  }
+  .strategy_card_top p {
+    font-size: 30px;
+  }
+  .strategy_card_top span {
+    font-size: 16px;
+  }
+  .strategy_card_btm {
+    height: auto;
+    padding: 20px;
+  }
 }

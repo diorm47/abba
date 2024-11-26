@@ -12,12 +12,30 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <section class="header">
+    <section class="header header_top">
       <nav>
         <div class="nav_wrapper container">
           <a href="./index.html">
             <img src="./assets/logo.svg" alt="" />
           </a>
+          <div class="nav_menu">
+            <a href="#"><p>О нас</p></a>
+            <a href="#"><p>О проекте</p></a>
+            <a href="#"><p>Стратегии инвестирования</p></a>
+            <a href="#"><p>Почему Бали?</p></a>
+            <a href="#"><p>Контакты</p></a>
+          </div>
+          <div class="nav_rigt">
+            <a href="#"><p>Получить презентацию</p></a>
+          </div>
+          <div class="mob_menu_btn">
+            <img onclick="toggleMenu()" src="./assets/icons/burger.svg" alt="" />
+          </div>
+        </div>
+        <div class="mob_menu">
+          <div class="mob_menu_exit">
+            <img  onclick="toggleMenu()" src="./assets/icons/exit-menu.svg" alt="" />
+          </div>
           <div class="nav_menu">
             <a href="#"><p>О нас</p></a>
             <a href="#"><p>О проекте</p></a>
@@ -65,7 +83,11 @@
 
     <section class="blocks_list container">
       <div class="main_card_item">
-        <img src="./assets/images/cards/1.png" alt="" />
+        <img
+          class="main_card_item_img"
+          src="./assets/images/cards/1.png"
+          alt=""
+        />
         <div class="main_card_item_desc">
           <img src="./assets/icons/percents/19.svg" alt="" />
           <p>
@@ -87,7 +109,11 @@
             эффективного вложения средств.
           </p>
         </div>
-        <img src="./assets/images/cards/2.png" alt="" />
+        <img
+          class="main_card_item_img"
+          src="./assets/images/cards/2.png"
+          alt=""
+        />
       </div>
     </section>
 
@@ -125,8 +151,8 @@
 
     <div class="cards_carousel_container">
       <section class="blocks_list container">
-        <div class="block_title">
-          <h2>Презентация проекта</h2>
+        <div class="block_title block_titles">
+          <h2>Доходность проекта</h2>
         </div>
 
         <div class="video">
@@ -140,7 +166,11 @@
             <div class="swiper-slide">
               <div class="cards_carousel_item">
                 <div class="main_card_item">
-                  <img src="./assets/images/cards/3.png" alt="" />
+                  <img
+                    class="main_card_item_img"
+                    src="./assets/images/cards/3.png"
+                    alt=""
+                  />
                   <div class="main_card_item_desc">
                     <img src="./assets/icons/percents/100.svg" alt="" />
                     <p>
@@ -162,14 +192,22 @@
                       метров гарантируют вашу безопасность.
                     </p>
                   </div>
-                  <img src="./assets/images/cards/4.png" alt="" />
+                  <img
+                    class="main_card_item_img"
+                    src="./assets/images/cards/4.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="cards_carousel_item">
                 <div class="main_card_item">
-                  <img src="./assets/images/cards/5.png" alt="" />
+                  <img
+                    class="main_card_item_img"
+                    src="./assets/images/cards/5.png"
+                    alt=""
+                  />
                   <div class="main_card_item_desc">
                     <img src="./assets/icons/percents/21.svg" alt="" />
                     <p>
@@ -191,14 +229,22 @@
                       — всё для комфорта.
                     </p>
                   </div>
-                  <img src="./assets/images/cards/6.png" alt="" />
+                  <img
+                    class="main_card_item_img"
+                    src="./assets/images/cards/6.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="cards_carousel_item">
                 <div class="main_card_item">
-                  <img src="./assets/images/cards/7.png" alt="" />
+                  <img
+                    class="main_card_item_img"
+                    src="./assets/images/cards/7.png"
+                    alt=""
+                  />
                   <div class="main_card_item_desc">
                     <img src="./assets/icons/percents/5.svg" alt="" />
                     <p>
@@ -218,14 +264,22 @@
                       всего в 20-30 минутах.
                     </p>
                   </div>
-                  <img src="./assets/images/cards/8.png" alt="" />
+                  <img
+                    class="main_card_item_img"
+                    src="./assets/images/cards/8.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="cards_carousel_item">
                 <div class="main_card_item">
-                  <img src="./assets/images/cards/9.png" alt="" />
+                  <img
+                    class="main_card_item_img"
+                    src="./assets/images/cards/9.png"
+                    alt=""
+                  />
                   <div class="main_card_item_desc">
                     <img src="./assets/icons/percents/p.svg" alt="" />
                     <p>
@@ -245,14 +299,22 @@
                       Residence.
                     </p>
                   </div>
-                  <img src="./assets/images/cards/10.png" alt="" />
+                  <img
+                    class="main_card_item_img"
+                    src="./assets/images/cards/10.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="cards_carousel_item">
                 <div class="main_card_item">
-                  <img src="./assets/images/cards/11.png" alt="" />
+                  <img
+                    class="main_card_item_img"
+                    src="./assets/images/cards/11.png"
+                    alt=""
+                  />
                   <div class="main_card_item_desc">
                     <img src="./assets/icons/percents/e.svg" alt="" />
                     <p>
@@ -273,9 +335,22 @@
                       кухней и видами на закат.
                     </p>
                   </div>
-                  <img src="./assets/images/cards/12.png" alt="" />
+                  <img
+                    class="main_card_item_img"
+                    src="./assets/images/cards/12.png"
+                    alt=""
+                  />
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="car_arrows">
+            <div class="car_arrow car_arrow_left">
+              <img src="./assets/icons/car-arr-l.svg" alt="" />
+            </div>
+            <div class="carousel_pagination"></div>
+            <div class="car_arrow car_arrow_right">
+              <img src="./assets/icons/car-arr-r.svg" alt="" />
             </div>
           </div>
         </div>
@@ -447,8 +522,24 @@
           loop: false,
           spaceBetween: 26,
           slidesPerView: 1,
+          speed: 1000,
+          navigation: {
+            nextEl: ".car_arrow_right",
+            prevEl: ".car_arrow_left",
+          },
+          pagination: {
+            el: ".carousel_pagination",
+            clickable: true,
+          },
         });
       });
+    </script>
+    <script>
+      function toggleMenu() {
+        document
+          .querySelector(".mob_menu")
+          .classList.toggle("visible_mob_menu");
+      }
     </script>
   </body>
 </html>
