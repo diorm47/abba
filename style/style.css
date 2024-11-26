@@ -571,18 +571,29 @@ nav {
     top: 0;
     height: 100%;
     object-fit: cover;
+    /* filter: brightness(0.7); */
   }
   .main_card_item_desc {
     position: relative;
     z-index: 11;
+
+    background: rgba(240, 240, 240, 0.703);
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_card_item_desc p {
+    text-align: center;
   }
 
   .main_card_item_desc p {
-    color: #fff;
+    color: rgb(23, 23, 23);
   }
-  .main_card_item_sb p {
+  /* .main_card_item_sb p {
     color: #000;
-  }
+  } */
 }
 
 @media only screen and (max-width: 600px) {
@@ -651,9 +662,13 @@ nav {
   .main_card_item_desc {
     width: 100%;
   }
-  .cards_carousel_item .main_card_item_desc img {
-    width: 80%;
+  .main_card_item .main_card_item_desc img {
+    width: 40%;
   }
+  .cards_carousel_item .main_card_item_desc img {
+    width: 70%;
+  }
+
   .cards_carousel_item .main_card_item {
     height: 360px;
   }
