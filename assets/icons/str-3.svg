@@ -1,0 +1,47 @@
+<svg width="46.180664" height="46.174561" viewBox="0 0 46.1807 46.1746" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient x1="20.608398" y1="33.842270" x2="45.427528" y2="33.842270" id="paint_linear_158_52_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EAC86B"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+		<linearGradient x1="25.572266" y1="29.953979" x2="40.463745" y2="29.953979" id="paint_linear_158_53_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EAC86B"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+		<linearGradient x1="0.752441" y1="12.332260" x2="25.571571" y2="12.332260" id="paint_linear_158_55_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EAC86B"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+		<linearGradient x1="5.716797" y1="8.443973" x2="20.608276" y2="8.443973" id="paint_linear_158_56_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EAC86B"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+		<linearGradient x1="35.500000" y1="18.123392" x2="45.427650" y2="18.123392" id="paint_linear_158_59_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EAC86B"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+		<linearGradient x1="28.054199" y1="12.332246" x2="40.463764" y2="12.332246" id="paint_linear_158_60_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EAC86B"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+		<linearGradient x1="0.752930" y1="31.360209" x2="10.680582" y2="31.360209" id="paint_linear_158_62_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EAC86B"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+		<linearGradient x1="5.717285" y1="37.151459" x2="18.126850" y2="37.151459" id="paint_linear_158_63_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EAC86B"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+	</defs>
+	<path id="Vector" d="M20.6 31.36L20.6 34.66L23.09 34.66L23.09 45.42L30.53 45.42L30.53 39.63L35.5 39.63L35.5 45.42L42.94 45.42L42.94 34.66L45.42 34.66L45.42 31.36L33.01 22.26L20.6 31.36Z" stroke="url(#paint_linear_158_52_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+	<path id="Vector" d="M25.57 32.68L33.01 27.22L40.46 32.68" stroke="url(#paint_linear_158_53_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	<path id="Vector" d="M0.75 9.85L0.75 13.15L3.23 13.15L3.23 23.91L10.68 23.91L10.68 18.12L15.64 18.12L15.64 23.91L23.08 23.91L23.08 13.15L25.57 13.15L25.57 9.85L13.16 0.75L0.75 9.85Z" stroke="url(#paint_linear_158_55_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+	<path id="Vector" d="M5.71 11.17L13.16 5.71L20.6 11.17" stroke="url(#paint_linear_158_56_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	<path id="Vector" d="M45.42 15.64L40.46 20.6L35.5 15.64" stroke="url(#paint_linear_158_59_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	<path id="Vector" d="M40.46 20.6L40.46 9.02C40.46 6.28 38.24 4.05 35.5 4.05L28.05 4.05" stroke="url(#paint_linear_158_60_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	<path id="Vector" d="M0.75 33.84L5.71 28.87L10.68 33.84" stroke="url(#paint_linear_158_62_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	<path id="Vector" d="M5.71 28.87L5.71 40.46C5.71 43.2 7.94 45.42 10.68 45.42L18.12 45.42" stroke="url(#paint_linear_158_63_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

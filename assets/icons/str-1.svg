@@ -1,0 +1,27 @@
+<svg width="49.483887" height="46.174438" viewBox="0 0 49.4839 46.1744" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient x1="0.750000" y1="23.087219" x2="48.733650" y2="23.087219" id="paint_linear_158_69_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EAC86B"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+		<linearGradient x1="8.159180" y1="15.141018" x2="41.325809" y2="15.141018" id="paint_linear_158_70_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EAC86B"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+		<linearGradient x1="13.987305" y1="31.360355" x2="35.497219" y2="31.360355" id="paint_linear_158_72_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EAC86B"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+		<linearGradient x1="29.707031" y1="26.810171" x2="32.188946" y2="26.810171" id="paint_linear_158_73_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#EAC86B"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+	</defs>
+	<path id="home" d="M44.59 23.91L48.73 23.91L48.73 18.95L40.46 12.67L40.46 3.23L34.66 3.23L34.66 8.27L24.74 0.75L0.75 18.95L0.75 23.91L4.88 23.91L4.88 45.42L44.59 45.42L44.59 23.91Z" stroke="url(#paint_linear_158_69_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+	<path id="Vector" d="M41.32 21.43L24.74 8.84L8.15 21.43" stroke="url(#paint_linear_158_70_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	<path id="Vector" d="M24.15 40.21C24.3 40.36 24.51 40.46 24.74 40.46C24.97 40.46 25.16 40.37 25.31 40.23L33.69 32.24C34.8 31.19 35.49 29.7 35.49 28.05C35.49 24.85 32.9 22.26 29.7 22.26C27.59 22.26 25.75 23.39 24.74 25.07C23.73 23.39 21.88 22.26 19.77 22.26C16.58 22.26 13.98 24.85 13.98 28.05C13.98 29.7 14.67 31.19 15.78 32.24L24.17 40.23" stroke="url(#paint_linear_158_72_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	<path id="Vector" d="M32.18 28.05C32.18 26.68 31.07 25.56 29.7 25.56" stroke="url(#paint_linear_158_73_0)" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
