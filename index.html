@@ -26,7 +26,7 @@
             <a href="#"><p>Контакты</p></a>
           </div>
           <div class="nav_rigt">
-            <a href="#"><p>Получить презентацию</p></a>
+            <p onclick="toggleModal()">Получить презентацию</p>
           </div>
           <div class="mob_menu_btn">
             <img
@@ -50,9 +50,6 @@
             <a href="#"><p>Стратегии инвестирования</p></a>
             <a href="#"><p>Почему Бали?</p></a>
             <a href="#"><p>Контакты</p></a>
-          </div>
-          <div class="nav_rigt">
-            <a href="#"><p>Получить презентацию</p></a>
           </div>
         </div>
       </nav>
@@ -83,11 +80,13 @@
             <p>Лазурный берег с золотым песком</p>
           </div>
         </div>
-        <a href="#">
-          <div class="main_block_desc main_block_desc_btm">
-            <p>Обсудить детали пассивного дохода</p>
-          </div></a
+
+        <div
+          class="main_block_desc main_block_desc_btm"
+          onclick="toggleModal()"
         >
+          <p>Обсудить детали пассивного дохода</p>
+        </div>
       </div>
     </section>
 
@@ -157,11 +156,9 @@
           </div>
         </div>
 
-        <a href="#">
-          <div class="bg_block_btn">
-            <p>Получить предложение</p>
-          </div></a
-        >
+        <div class="bg_block_btn" onclick="toggleModal()">
+          <p>Получить предложение</p>
+        </div>
       </div>
     </section>
 
@@ -539,6 +536,56 @@
       </div>
     </section>
 
+    <div class="overlay" onclick="toggleModal()">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal_title">
+          <p>Получить предложение</p>
+          <img onclick="toggleModal()" src="./assets/icons/exit.svg" alt="" />
+        </div>
+
+        <div class="modal_content">
+          <div class="modal_input">
+            <p>Имя <span>*</span></p>
+            <input type="text" id="name" />
+          </div>
+          <div class="modal_input">
+            <p>Ваш телефон с WhatsApp или логин Telegram <span>*</span></p>
+            <input type="text" id="phone" />
+          </div>
+          <div class="modal_input">
+            <p>Способ связи <span>*</span></p>
+            <div class="contact_options">
+              <input
+                type="radio"
+                name="contact_method"
+                id="whatsapp"
+                value="WhatsApp"
+              />
+              <label for="whatsapp">WhatsApp</label>
+            </div>
+            <div class="contact_options">
+              <input
+                type="radio"
+                name="contact_method"
+                id="telegram"
+                value="Telegram"
+              />
+              <label for="telegram">Telegram</label>
+            </div>
+          </div>
+          <div class="modal_input">
+            <p>Электронная почта <span>*</span></p>
+            <input type="email" id="email" />
+          </div>
+          <div class="modal_input">
+            <p>Пожелание в свободной форме <span>*</span></p>
+            <input type="text" id="message" />
+          </div>
+          <button class="send_btn" id="sendBtn">Отправить заявку!</button>
+        </div>
+      </div>
+    </div>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const swiper = new Swiper(".cards_carousel", {
@@ -562,6 +609,69 @@
         document
           .querySelector(".mob_menu")
           .classList.toggle("visible_mob_menu");
+      }
+    </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        emailjs.init("DSFmx66MwidL4OS8S");
+
+        const sendBtn = document.getElementById("sendBtn");
+
+        sendBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value.trim();
+          const phone = document.getElementById("phone").value.trim();
+          const contactMethod = document.querySelector(
+            'input[name="contact_method"]:checked'
+          );
+          const email = document.getElementById("email").value.trim();
+          const message = document.getElementById("message").value.trim();
+
+          // Валидация
+          if (!name || !phone || !contactMethod || !email || !message) {
+            alert("Пожалуйста, заполните все поля!");
+            return;
+          }
+
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert("Введите корректный адрес электронной почты!");
+            return;
+          }
+
+          const formData = {
+            name,
+            phone,
+            contact_method: contactMethod.value,
+            email,
+            message,
+          };
+
+          emailjs
+            .send("service_c8dyjd8", "template_iy74582", formData)
+            .then(() => {
+              alert("Сообщение успешно отправлено!");
+              document.getElementById("name").value = "";
+              document.getElementById("phone").value = "";
+              document.querySelector(
+                'input[name="contact_method"]:checked'
+              ).checked = false;
+              document.getElementById("email").value = "";
+              document.getElementById("message").value = "";
+              toggleModal();
+            })
+            .catch((error) => {
+              console.error("Ошибка при отправке:", error);
+              alert("Ошибка при отправке сообщения. Попробуйте снова.");
+            });
+        });
+      });
+    </script>
+
+    <script>
+      function toggleModal() {
+        document.querySelector(".overlay").classList.toggle("visivble_overlay");
       }
     </script>
   </body>

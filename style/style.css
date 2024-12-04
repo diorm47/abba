@@ -47,7 +47,8 @@ a {
   letter-spacing: 0%;
   text-align: left;
 }
-.nav_menu p:hover, .nav_rigt p:hover {
+.nav_menu p:hover,
+.nav_rigt p:hover {
   text-decoration: underline;
 }
 
@@ -533,6 +534,119 @@ nav {
   width: 100%;
   border-radius: 30px;
 }
+.nav_rigt p, .main_block_desc_btm, .bg_block_btn {
+  cursor: pointer;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background: #0000006f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  transform: translateY(-100%);
+  z-index: 110;
+}
+
+.visivble_overlay {
+  transition: all 0.4s ease;
+  transform: translateY(0);
+}
+.modal {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  background: #fff;
+}
+.modal_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid #80808057;
+}
+.modal_title p {
+  color: #000000c4;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.modal_title img {
+  cursor: pointer;
+}
+.modal_content {
+  padding: 20px;
+}
+.modal_input p {
+  color: #000000c4;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 5px;
+}
+.modal_input span {
+  color: red;
+}
+.modal_input input {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #80808057;
+  border-radius: 5px;
+  outline: none;
+  text-indent: 12px;
+  color: #000000c4;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.modal_input {
+  margin-bottom: 15px;
+}
+.send_btn {
+  width: 100%;
+  margin-top: 10px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: rgb(241, 50, 50);
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+}
+.contact_options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.contact_options input {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #80808057;
+  cursor: pointer;
+}
+.contact_options p {
+  margin: 0;
+}
+.contact_options label {
+  cursor: pointer;
+  color: #000000c4;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+}
 @media only screen and (max-width: 1100px) {
   .container {
     padding-left: 20px;
@@ -615,6 +729,9 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
+  .overlay {
+    padding: 0 20px;
+  }
   .youtube_video iframe {
     width: 100%;
     border-radius: 10px;
@@ -626,7 +743,7 @@ nav {
     gap: 24px 0;
   }
   .why_bali_option img {
-  max-width: 130px;
+    max-width: 130px;
   }
   nav {
     margin-bottom: 60px;
